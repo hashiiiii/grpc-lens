@@ -1,0 +1,44 @@
+# https://speakerdeck.com/sgash708/timudeyun-yong-suru-golangci-lint-noxiang-kihe-ifang
+
+run:
+  go: '1.24.3'
+  timeout: 3m
+
+linters:
+  # manage as whitelist style
+  disable-all: true
+  enable:
+    # default in golangci-lint
+    - errcheck
+    - gosimple
+    - govet
+    - ineffassign
+    - staticcheck
+    - typecheck
+    - unused
+    - varcheck
+    # non-default in golangci-lint
+    - gocyclo
+    - gofmt
+    - gosec
+    - bodyclose
+    - goconst
+    - gci
+    - nestif
+    - lll
+    - nlreturn
+    - predeclared
+    - tagliatelle
+
+linters-settings:
+  tagliatelle:
+    case:
+      use-field-name: true
+      rules:
+        json: camel
+        yaml: camel
+        xml: camel
+        envconfig: upperSnake
+  lll:
+    line-length: 140
+    tab-width: 2

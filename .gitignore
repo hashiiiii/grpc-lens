@@ -1,9 +1,40 @@
-# IDE
-.vscode/
+# Binaries for programs and plugins
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Go specific
+/vendor/
+/go.sum
+*.test
+*.out
+coverage.txt
+coverage.html
+*.prof
+*.pprof
+
+# IDE specific files
 .idea/
+.vscode/
+
+# OS specific
+.DS_Store
+
+# Zig specific
+.zig-cache/
+zig-out/
+build/
+*.zig.test
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Node.js
+node_modules/
 
 # Docs
 docs/
-
-# Build
-node_modules/
