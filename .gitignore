@@ -17,7 +17,6 @@ coverage.html
 
 # IDE specific files
 .idea/
-.vscode/
 
 # OS specific
 .DS_Store

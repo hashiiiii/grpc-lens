@@ -1,0 +1,17 @@
+{
+    "go.goroot": "/${userHome}/.local/share/mise/installs/go/1.24.3",
+    "debug.javascript.defaultRuntimeExecutable": {
+        "pwa-node": "/${userHome}/.local/share/mise/shims/node"
+    },
+    "go.alternateTools": {
+        "go": "/${userHome}/.local/share/mise/shims/go"
+    },
+    "go.lintTool": "golangci-lint",
+    "go.lintFlags": [
+        "--config=${workspaceFolder}/.golangci.yml",
+        "--fast"
+    ],
+    "zig.buildOnSave": true,
+    "zig.path": "/${userHome}/.local/share/mise/installs/zig/0.14.1/bin/zig",
+    "zig.zls.path": "/${userHome}/.local/share/mise/installs/zls/0.14.0/zls",
+}
