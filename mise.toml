@@ -4,6 +4,7 @@ go = '1.24.3'
 zig = '0.14'
 golangci-lint = '1.64.6'
 zls = '0.14'
+"ubi:DonIsaac/zlint" = { version = "v0.7.9", matching = "macos-aarch64", rename_exe = "zlint" }
 
 [env]
 _.file = '.env'

@@ -1,6 +1,8 @@
 {
   "scripts": {
-    "textlint": "npx textlint --fix ."
+    "text:lint": "npx textlint --fix",
+    "go:lint": "golangci-lint run --fix",
+    "zig:lint": "zlint --fix"
   },
   "devDependencies": {
     "@textlint-ja/textlint-rule-preset-ai-writing": "^1.5.0",

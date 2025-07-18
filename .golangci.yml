@@ -16,7 +16,6 @@ linters:
     - staticcheck
     - typecheck
     - unused
-    - varcheck
     # non-default in golangci-lint
     - gocyclo
     - gofmt
