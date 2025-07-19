@@ -37,3 +37,6 @@ node_modules/
 
 # Docs
 docs/
+
+# Kiro
+.kiro/specs/
