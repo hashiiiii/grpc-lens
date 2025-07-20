@@ -1,5 +1,12 @@
 {
   "scripts": {
+    "build": "npm run build:kernel && npm run build:userspace",
+    "build:kernel": "zig build --prefix .",
+    "build:userspace": "go build -o bin/grpc-lens ./userspace/cmd/grpc-lens",
+    "clean": "rm -rf bin/ zig-out/ zig-cache/",
+    "test": "npm run test:kernel && npm run test:userspace",
+    "test:kernel": "zig build test",
+    "test:userspace": "go test ./userspace/...",
     "text:lint": "npx textlint --fix",
     "go:lint": "golangci-lint run --fix",
     "zig:lint": "zlint --fix"

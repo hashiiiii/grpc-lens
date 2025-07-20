@@ -40,3 +40,6 @@ docs/
 
 # Kiro
 .kiro/specs/
+
+# build artifacts
+bin/
