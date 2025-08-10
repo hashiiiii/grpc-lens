@@ -27,14 +27,16 @@
         "GOMODCACHE": "${env:GOMODCACHE}"
       }
     },
-    "zig-mcp-server": {
+    "zig-docs": {
       "type": "stdio",
       "command": "npx",
       "args": [
         "-y",
-        "@smithery/cli",
-        "run",
-        "zig-mcp-server"
+        "zig-mcp@latest",
+        "--version",
+        "master",
+        "--update-policy",
+        "manual"
       ]
     }
   }
